@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import {provide} from "vue"
 // This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+//Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+provide("message", "hello")
 </script>
 
 <template>
