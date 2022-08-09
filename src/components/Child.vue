@@ -3,7 +3,7 @@
     <h3>buffer test 8 : {{uint8Array}}</h3>
     <h3>buffer test 16 : {{uint16Array}}</h3>
     <h3>buffer test 32: {{uint32Array}}</h3>
-    <h3>uint8Array ref : {{compRef}}, {{testRef[0]}}</h3>
+    <h3>uint8Array ref : {{testRef[0]}}</h3>
     <button @click="doPlus">plus buffer[0] value</button>
 
     <h3>number test : {{numRef}}</h3>

@@ -1,5 +1,5 @@
 <template>
-    <h2>{{provideValue}}</h2>
+    <h2>{{provideValue}}..</h2>
 </template>
 <script type="ts">
 import { inject } from 'vue'

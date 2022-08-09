@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import Parent from '../components/Parent.vue'
   import {useCart} from '../store/cart'
   const cart = useCart()
 </script>
@@ -7,22 +8,14 @@
   <div>
     Main
   </div>
+  <Parent />
   <teleport to="body">
-    <div class="top-bar">
+    <div class="top-bar" @click="cart.addItem({id:1, name: 'f'})">
       main의 자식 teleport..
     </div>
   </teleport>
 </template>
 
-<style scoped>
-  .top-bar {
-    position: fixed;
-    z-index: 9999;
-    background-color: blue;
-    width: 100%;
-    left: 0;
-    top: 60px;
-    height: 20px;
-    text-align: center;
-  }
+<style lang="scss" scoped>
+  @import "../assets/main.scss";
 </style>

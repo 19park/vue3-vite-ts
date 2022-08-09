@@ -10,7 +10,7 @@ onMounted(() => {
 
 <template>
   <div>
-    Sub
+    Sub!
   </div>
   <Child />
 </template>
